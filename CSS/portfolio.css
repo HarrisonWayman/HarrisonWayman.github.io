@@ -7,7 +7,7 @@ body {
 /* Heading 1 elements */
 h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
+    font-family: Bookman, serif; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #rgb(21, 240, 13); 
@@ -22,18 +22,18 @@ h1:hover {
 
 /* Styling for portfolio title text */
 .white-text {
-    color: rgb(21, 240, 13); /* This is used to change the color of the portfolio title text */
+    color: rgb(255, 255, 255); /* This is used to change the color of the portfolio title text */
 }
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: New Century Schoolbook, serif;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 20px; /* Adds padding to the left of the paragraph element */
     padding-right: 20px; /* Adds padding to the right of the paragraph element */
-    color:rgb(21, 240, 13)
+    color:rgb(241, 245, 240)
 }
 
 /* Paragraph element hover effect */
@@ -122,8 +122,8 @@ footer {
     color: rgb(21, 240, 13); /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Avant Garde, Helvetica; /* This specifies the font family for text on our navbar */
-    font-size: 20px; /* This specifies the font size for text on our navbar */
+    font-family: Bookman, serif; /* This specifies the font family for text on our navbar */
+    font-size: 30px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
@@ -288,3 +288,222 @@ form {
     font-family: "Trebuchet MS", Optima;
 }
 /***** END OF CONTACT FORM STYLING *****/
+
+/* Slideshow Styling */
+#Slideshow_Background {
+    background:rgba(255,255,255, 0.35); /* This creates a slightly transparent white background that's placed over the video */
+    }
+  
+  
+  .mySlides {
+      display: none;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* Slideshow section / container */
+  #Slideshow_Container {
+    width: 39.5vw;
+    height: auto;
+    padding-top: 4%;
+    position: relative;
+    margin: auto;
+  
+  }
+  
+  /* Images contained within slideshow */
+  .Slide_Show_Images {
+    vertical-align: middle;
+    height: auto;
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
+    width: auto;
+  }
+  
+  
+  /* Next and previous buttons */
+  .Previous, .Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2vw;
+    margin-top: -0vw;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+  }
+  
+  /* Positioning the right-hand next button */
+  .Next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Hover effect on slide show buttons */
+  .Previous:hover, .Next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* Slideshow text */
+  .text {
+    color: white;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw; 
+    font-size: 1.5vw;
+    background-color: rgba(0,0,0,0.75);
+    font-weight: bold;
+    border-radius: 7px 7px 7px 7px;
+  }
+  
+  /* Number text (1/6, 2/6, etc.) - we have set this display to none, which means these are hidden */
+  .Slide_Number {
+    color: white;
+    position: absolute;
+    top: 0;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw; 
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: none;
+    }
+  
+  /* The dots under the slideshow */
+  .dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: .25vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Hover effect for slideshow dots */ 
+  .active, .dot:hover {
+    background-color: black;
+  }
+  
+  /* Fading animation for slideshow */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;  
+  }
+
+  /* Contact form styling */
+
+/* Makes contact form button slide in from right on page load */
+@keyframes movePopup {
+    from {right: -40vw;}
+    to {bottom: 1.75vw;}
+  }
+  
+  /* Button used to open the contact form - fixed at the bottom of the page */
+  .Pop_Up_Button {
+    bottom: 1.75vw;
+    right: 1.75vw;
+    width: 25vw;  
+    background-color: white;
+    color: black;
+    border: solid;
+    cursor: pointer;
+    position: fixed;
+    -webkit-animation: movePopup 5s;
+    animation: movePopup 5s;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    border: 3px solid #f0f1f0;
+    z-index: 8;
+    display: none;
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
+  }
+  
+  /* Form styling */
+  .form-container {
+    max-width: 49vw;
+    padding: 9px;
+    background-color: white;
+  }
+  
+  /* Input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: .93vw;
+    margin: .6vw 0 .6vw 0;
+    border: none;
+    background: Gainsboro;
+    font-family: Helvetica, Avant Garde;
+    font-size: 1vw; 
+  }
+  
+  /* Submit button */
+  .form-container .btn {
+    background-color: white;
+    color: black;
+    border-color: black;
+    margin-bottom:1vh;
+  }
+  
+  /* Close button */
+  .form-container .cancel {
+    background-color: black;
+    color: white;
+    border-color: gray;
+  }
+  
+  /* Button styling */
+  button {
+    font-family: "Trebuchet MS", Optima; 
+    letter-spacing: .3vw; 
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 1.5vw 1.5vw;
+    border-style: solid;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover, .form-container .btn:hover{
+    color: white;
+    background-color: black;
+    -webkit-transition-duration: 1s; 
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: silver;
+  }
+  .form-container .cancel:hover{
+    color: white;
+    background-color: darkred;
+    -webkit-transition-duration: 1s; 
+    transition-duration: 1s;
+    border-style: solid;
+    border-color: black;
+  }	
+
