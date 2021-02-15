@@ -6,8 +6,7 @@ body {
 
 /* Heading 1 elements */
 h1 {
-    text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: Bookman, serif; /* Sets the font family of all h1 headings */
+    font-family: 'Oswald', sans-serif; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
     color: #rgb(21, 240, 13); 
@@ -27,13 +26,13 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: New Century Schoolbook, serif;
+    font-family: 'Oswald', sans-serif;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 20px; /* Adds padding to the left of the paragraph element */
     padding-right: 20px; /* Adds padding to the right of the paragraph element */
-    color:rgb(241, 245, 240)
+    color:rgb(245, 245, 245);
 }
 
 /* Paragraph element hover effect */
@@ -55,7 +54,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: rgb(238, 18, 220); /* This ensures all links are blue */
+    color: rgb(74, 13, 241); /* This ensures all links are blue */
 }
 
 /* Quotation elements */
@@ -93,14 +92,14 @@ img:hover {
 /* Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(12, 66, 241);
 }
 /***** END OF GENERAL STYLING *****/
 
 /***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: black; /* This colors the navbar black */
+    background-color: rgb(12, 66, 241); /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
@@ -119,10 +118,10 @@ footer {
 .Navbar a {
     float: left; /* This specifies that the text floats on the left on the navbar */
     display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
-    color: rgb(21, 240, 13); /* This is the font color for text on our navbar */
+    color: rgb(255, 255, 255); /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
-    font-family: Bookman, serif; /* This specifies the font family for text on our navbar */
+    font-family: 'Oswald', sans-serif; /* This specifies the font family for text on our navbar */
     font-size: 30px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
@@ -147,13 +146,13 @@ footer {
 /* Navbar hover effects */
 .Navbar a:hover {
     background-color: #f4f4f4; /* Defines the background color that will display when you hover over the link */
-    color: black; /* This defines the font color that will display when navbar a elements are hovered over */
+    color: rgb(12, 66, 241); /* This defines the font color that will display when navbar a elements are hovered over */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
 }
 
 /* Navbar home button */
 .Navbar a.active { /* This targets the a element on the navbar with the "active" class */
-    background-color: darkgray;
+    background-color: rgb(11, 33, 238);
 }
 /***** END OF NAVBAR STYLING *****/
 
@@ -203,8 +202,8 @@ footer {
     padding: 10px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #1d1b1b; /* Sets the background color of the columns with class Column_1 */
-    color:rgb(21, 240, 13)
+    
+    color:rgb(243, 248, 242)
 }
 
 
@@ -221,7 +220,7 @@ footer {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-color: #000000;
+   
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
@@ -254,13 +253,13 @@ input[type=text] {
 
 /* Hover effects for input boxes */
 input[type=text]:hover {
-    box-shadow: 0 0 5px #ee07bc inset; /* This creates a blue shadow in the text box when hovered over by the user */
+    box-shadow: 0 0 5px #0c2ef0 inset; /* This creates a blue shadow in the text box when hovered over by the user */
 }
 
 /* Submit button */
 input[type=submit] {
     background-color: black; /* Sets the background color of the submit button to black */
-    color: rgb(54, 223, 32); /* Sets the font color of the Submit button to white */
+    color: #f2f5f1; /* Sets the font color of the Submit button to white */
     font-weight: bold; /* Makes the font of the submit button bold */
     padding: 12px 20px; /* Adds padding to the submit button */
     border: none; /* Removes the border from the submit button */
@@ -274,7 +273,7 @@ input[type=submit] {
 
 /* Hover effect for submit button */
 input[type=submit]:hover {
-    background-color: rgb(54, 223, 32); /* Turns the background of the submit button white when the user hovers over it */
+    background-color: rgb(237, 240, 236); /* Turns the background of the submit button white when the user hovers over it */
     color: black; /* Turns the font black when hovered over */
     transform: scale(1.5); /* Makes the button increase 1.5 times in size */
     transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
