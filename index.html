@@ -16,9 +16,8 @@
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
-            <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
+            <a href="#Work">Work</a>
             <a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
 
         </div>
@@ -30,7 +29,7 @@
         <!--Background video-->
         <div id="Home">
             <video autoplay muted loop id="Typing_Video">
-                <source src="CSS/video/codingvid2.mp4" type="video/mp4">
+                <source src="CSS/video/Feather.mp4" type="video/mp4">
                 <!--Display message if video fails to run-->
                 Your browser does not support HTML5 video
             </video>
@@ -43,7 +42,7 @@
             <strong>
                 <p class="center">
                   
-                    <br> My name is Harrison. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br> My name is Harrison, I'm a UI/UX designer. Welcome to my portfolio website.<br> On it, I will tell you about my background and experience.
                     <br>
                     <br> Thank you for stopping by and enjoy! 
                 </p>
@@ -57,32 +56,32 @@
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">1 / 6</div>
-                        <img class="Slide_Show_Images" src="CSS/Images/MePic2.jpg">
-                            <div class="text">I am available to assist to on your project!</div>
+                        <img class="Slide_Show_Images" src="CSS/Images/MePic2.jpg" style="width:400px;height:400px;"><br>
+                            <div class="text">A bit about myself...</div>
                     </div>
 
                     <div class="mySlides fade">
                         <div class="Slide_Number">2 / 6</div>
-                        <img class="Slide_Show_Images" src="CSS/Images/HTML_CSS_and_JavaScript.jpg">
+                        <img class="Slide_Show_Images" src="CSS/Images/HTML_CSS_and_JavaScript.jpg" style="width:400px;height:400px;"><br>
                             <div class="text">I am a UI/UX designer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
                     </div>
             
                     <div class="mySlides fade">
                         <div class="Slide_Number">3 / 6</div>
-                        <img class="Slide_Show_Images" src="CSS/Images/UI_UX.png" style="width:50%">
+                        <img class="Slide_Show_Images" src="CSS/Images/UI_UX.png"  style="width:400px;height:400px;"><br>
                             <div class="text">User Interface & User Experience Design,</div>
                     </div>
             
             
                     <div class="mySlides fade">
                         <div class="Slide_Number">5 / 6</div>
-                        <img class="Slide_Show_Images" src="CSS/Images/SQL_and_Database.jpg" style="width:50%">
+                        <img class="Slide_Show_Images" src="CSS/Images/SQL_and_Database.jpg" style="width:400px;height:400px;"><br>
                             <div class="text">back end development, databases and SQL.</div>
                         </div>
             
                     <div class="mySlides fade">
                         <div class="Slide_Number">6 / 6</div>
-                        <img class="Slide_Show_Images" src="CSS/Images/contact.jpg" style="width:60%">
+                        <img class="Slide_Show_Images" src="CSS/Images/contact.jpg" style="width:400px;height:400px;"><br>
                             <div class="text"> 
                             <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
                             </div>
@@ -115,7 +114,7 @@
             <div class="Column_1">
                 <h1>About me</h1>
                 <p>
-                    I am a software designer who studies at the Tech Academy and loves turning coffee into code! I'm 21 years old and I have a passion for art and computers. These passions have brought me to programming and designing and has provided me a whole new canvas for my ideas.
+                    I am a UI/UX designer who turns coffee and great ideas into beautiful user interfaces! I'm 22 years old and I have a passion for art and computers. These passions have brought me to coding and designing and has provided me a whole new canvas for my ideas.
                     <br>
                     <br>My studies are currently at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s UI/UX Designer Bootcamp, I'm trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, UI/UX and more to come!
             
@@ -124,14 +123,15 @@
         </div>
 
         <!--GitHub section-->
-        <div class="Row" id="GitHub"></div>
+        <div class="Row" id="Work"></div>
             <!--Left column-->
             <div class="Column_1">
-                <h1>GitHub</h1>
+                <h1>My Work</h1>
                 <p>
-                    You can view my coding projects on my GitHub profile right here!:
+                    You can view my coding projects on my GitHub and my designs on Dribble below.
                     <br>
                     <p class="center"><a href="https://github.com/HarrisonWayman" target="_blank">Harrison Wayman's Github</a></p>
+                    <p class="center"><a href="https://dribbble.com/HarryWayman" target="_blank">Harrison Wayman's Dribble</a></p>
                 </p>
             </div>
            
@@ -142,7 +142,7 @@
             <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
             <div class="form-popup" id="myForm">
                 <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-                <h1>Contact</h1>
+                <h1 style="color:rgba(251, 255, 0, 0.609) ;">Contact</h1>
                     <label for="name"><b>Name</b></label>
                     <input type="text" placeholder="Type your name here" name="name" required>
                     <label for="phone"><b>Phone</b></label>

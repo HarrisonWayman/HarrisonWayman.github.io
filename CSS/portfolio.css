@@ -1,11 +1,13 @@
 /***** GENERAL STYLING *****/
 /* Body */
 body {
-    margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0%;  /* This ensures our site displays all the way to the edge of the browser screen */
+    background-color: rgb(20, 148, 137);
 }
 
 /* Heading 1 elements */
 h1 {
+    text-shadow: 3px 3px #000000;
     font-family: 'Montserrat', sans-serif; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
@@ -29,10 +31,11 @@ p {
     font-family: 'Montserrat', sans-serif;
     text-align: center; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 20px; /* Adds padding to the left of the paragraph element */
     padding-right: 20px; /* Adds padding to the right of the paragraph element */
-    color:rgb(245, 245, 245);
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px #000000;
 }
 
 /* Paragraph element hover effect */
@@ -54,7 +57,7 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: rgb(197, 195, 43); /* This ensures all links are blue */
+    color: rgb(238, 235, 46); /* This ensures all links are blue */
 }
 
 
@@ -89,7 +92,7 @@ img:hover {
 /* Styling for footer element */
 footer {
     padding: 2%; /* This gives the footer padding that is equal to 2% of the width of the element's area */
-    background-color: rgba(3, 182, 158, 0.198);
+    background-color: rgba(191, 221, 22, 0.219);
 }
 /***** END OF GENERAL STYLING *****/
 
@@ -115,15 +118,16 @@ footer {
 .Navbar a {
     float: left; /* This specifies that the text floats on the left on the navbar */
     display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
-    color: rgb(255, 255, 255); /* This is the font color for text on our navbar */
+    color: rgb(209, 212, 24); /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: 'Montserrat', sans-serif; /* This specifies the font family for text on our navbar */
-    font-size: 30px; /* This specifies the font size for text on our navbar */
+    font-size: 35px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 5.75s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveNavText 5.75s; /* Applies the moveNavText animation for 5.75s */ 
+    text-shadow: 1px 1px #000000;
 }
 
 /* moveNavText animation effect for moving the navbar text from above the view to the navbar */
@@ -156,10 +160,10 @@ footer {
 /***** VIDEO STYLING *****/
 /* Formatting for background video */
 #Typing_Video {
-    position: fixed; /* This fixes the video to the page */
+    position:absolute; /* This fixes the video to the page */
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
-    bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
-    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+    bottom: 45%; /* This ensures no space between the bottom of the video and the bottom of the page */
+    min-width: 50%; /* This ensures the video is displayed across the full width of the page */
     z-index: -1; /* This places the video behind the other elements on the page */
 }
 
@@ -304,8 +308,9 @@ form {
   .Slide_Show_Images {
     vertical-align: middle;
     height: 50%;
-    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
+    box-shadow: 0px 0px 12px 12px rgb(255, 251, 0);
     width: 50%;
+    border-radius: 50%;
   }
   
   
@@ -313,13 +318,13 @@ form {
   .Previous, .Next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 2vw;
     margin-top: -0vw;
     color: rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     border-radius: 0 3px 3px 0;
     user-select: none;
     transition: 0.6s ease;
@@ -333,7 +338,7 @@ form {
   
   /* Hover effect on slide show buttons */
   .Previous:hover, .Next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(243, 240, 36, 0.233);
     color: white;
   }
   
@@ -381,7 +386,7 @@ form {
   
   /* Hover effect for slideshow dots */ 
   .active, .dot:hover {
-    background-color: black;
+    background-color: rgb(198, 201, 41);
   }
   
   /* Fading animation for slideshow */
@@ -405,7 +410,7 @@ form {
     bottom: 1.75vw;
     right: 1.75vw;
     width: 25vw;  
-    background-color: white;
+    background-color: rgba(213, 224, 57, 0.13);
     color: black;
     border: solid;
     cursor: pointer;
@@ -428,7 +433,7 @@ form {
   .form-container {
     max-width: 49vw;
     padding: 9px;
-    background-color: white;
+    background-color: rgba(229, 230, 222, 0.712);
   }
   
   /* Input fields */
@@ -472,12 +477,12 @@ form {
   
   /* Hover effect for buttons */
   button:hover, .form-container .btn:hover{
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
     border-style: solid;
-    border-color: silver;
+    border-color: rgb(231, 243, 56);
   }
   .form-container .cancel:hover{
     color: white;
