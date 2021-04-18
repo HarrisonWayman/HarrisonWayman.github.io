@@ -433,7 +433,7 @@ form {
   .form-container {
     max-width: 49vw;
     padding: 9px;
-    background-color: rgba(229, 230, 222, 0.712);
+    background-color: rgba(229, 230, 222, 0.822);
   }
   
   /* Input fields */
@@ -482,7 +482,7 @@ form {
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
     border-style: solid;
-    border-color: rgb(231, 243, 56);
+    border-color: rgba(231, 243, 56, 0.466);
   }
   .form-container .cancel:hover{
     color: white;
