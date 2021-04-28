@@ -1,2 +1,2 @@
-Portfolio Website @ HarrisonWayman.github.io
-Built using HTML, CSS & Javascript
+Portfolio Website @ HarrisonWayman.github.io.
+Assembled using HTML, CSS & Javascript.
